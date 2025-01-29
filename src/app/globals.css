@@ -9,6 +9,8 @@
 html{
   font-family: var(--font-cinzel) !important;
   font-weight: 400;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
 }
 :root {
   --background: #ffffff;

@@ -2,11 +2,13 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useEffect, useState } from "react";
 
 const services = [
   {
     title: "Wedding & Pre-Wedding",
     year: "2024",
+    link:"/services/wedding",
     technologies: ["Candid", "Traditional", "Cinematic"],
     description: "Capturing your special moments with a perfect blend of traditional elegance and modern storytelling. Our wedding photography services ensure every precious moment is preserved forever.",
     image: "https://cdn.pixabay.com/photo/2025/01/11/09/08/wedding-9325558_640.jpg"
@@ -14,6 +16,7 @@ const services = [
   {
     title: "Portfolio Shoot",
     year: "2024",
+    link:"/services/portfolioshoot",
     technologies: ["Fashion", "Model", "Artistic"],
     description: "Professional portfolio photography services designed to showcase your unique personality and talent. Perfect for models, actors, and professionals seeking to make a lasting impression.",
     image: "https://cdn.pixabay.com/photo/2023/05/20/19/58/woman-8007247_1280.jpg"
@@ -21,6 +24,7 @@ const services = [
   {
     title: "Street Photography",
     year: "2024",
+    link:"/services/streetphotography",
     technologies: ["Documentary", "Urban", "Lifestyle"],
     description: "Capturing the raw essence of urban life through candid street photography. Our approach focuses on authentic moments and the genuine spirit of city living.",
     image: "https://cdn.pixabay.com/photo/2020/02/09/22/56/london-4834823_640.jpg"
@@ -28,6 +32,7 @@ const services = [
   {
     title: "Exhibitions",
     year: "2024",
+    link:"/services/exhibitions",
     technologies: ["Gallery", "Art", "Events"],
     description: "Specialized photography services for art exhibitions, galleries, and cultural events. We ensure your artwork and exhibitions are documented with precision and artistic sensitivity.",
     image: "https://cdn.pixabay.com/photo/2014/12/29/08/29/lens-582605_640.jpg"
@@ -35,6 +40,7 @@ const services = [
   {
     title: "Baby Shoot",
     year: "2024",
+    services:"/services/babyshoot",
     technologies: ["Newborn", "Infant", "Milestone"],
     description: "Gentle and professional baby photography capturing those precious early moments. Our specialized approach ensures comfortable and safe sessions for your little ones.",
     image: "https://cdn.pixabay.com/photo/2023/06/11/14/38/baby-8056153_640.jpg"
@@ -42,6 +48,7 @@ const services = [
   {
     title: "Maternity Shoot",
     year: "2024",
+    link:"/services/maternityshoot",
     technologies: ["Pregnancy", "Family", "Studio"],
     description: "Celebrating the beauty of motherhood through elegant maternity photography. We create timeless images that capture this special journey in your life.",
     image: "https://cdn.pixabay.com/photo/2023/05/29/00/24/blue-tit-8024809_640.jpg"
@@ -49,6 +56,7 @@ const services = [
   {
     title: "Commercial Shoot",
     year: "2024",
+    link:"/services/commercialshoot",
     technologies: ["Product", "Brand", "Marketing"],
     description: "Professional commercial photography that elevates your brand. From product photography to marketing materials, we help businesses showcase their best features.",
     image: "https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_640.jpg"
@@ -56,6 +64,7 @@ const services = [
   {
     title: "Corporate Shoot",
     year: "2024",
+    link:"/services/corporateshoot",
     technologies: ["Business", "Professional", "Team"],
     description: "Corporate photography services tailored for the modern business environment. Including headshots, team photos, and event coverage for professional settings.",
     image: "https://cdn.pixabay.com/photo/2022/10/17/15/02/photography-7527978_640.jpg"
@@ -63,6 +72,7 @@ const services = [
   {
     title: "Property Shoot",
     year: "2024",
+    link:"/services/propertyshoot",
     technologies: ["Real Estate", "Interior", "Architectural"],
     description: "Expert property photography showcasing real estate at its finest. We capture spaces in their best light, helping properties stand out in the market.",
     image: "https://cdn.pixabay.com/photo/2014/12/27/15/31/camera-581126_640.jpg"
@@ -70,6 +80,7 @@ const services = [
   {
     title: "Anniversary Shoot",
     year: "2024",
+    link:"/services/anniversaryshoot",
     technologies: ["Couple", "Celebration", "Portrait"],
     description: "Romantic anniversary photography celebrating your journey together. We create beautiful memories that capture the love and joy of your special milestone.",
     image: "https://cdn.pixabay.com/photo/2014/08/29/07/22/lens-430621_640.jpg"
@@ -77,6 +88,7 @@ const services = [
   {
     title: "Birthday",
     year: "2024",
+    link:"/services/birthday",
     technologies: ["Party", "Event", "Celebration"],
     description: "Vibrant birthday photography services capturing all the fun and excitement. From kids' parties to milestone celebrations, we document every special moment.",
     image: "https://cdn.pixabay.com/photo/2022/08/02/18/30/birthday-party-7361026_640.jpg"
@@ -84,12 +96,126 @@ const services = [
   {
     title: "Rice Ceremony",
     year: "2024",
+    link: "/services/riceceremony",
     technologies: ["Traditional", "Cultural", "Ritual"],
     description: "Specialized photography for traditional rice ceremony celebrations. We capture this important cultural milestone with respect and attention to detail.",
     image: "https://media.istockphoto.com/id/1298810011/photo/beautifully-decorated-pooja-thali-for-festival-celebration-to-worship-rice-grain-and-kumkum.jpg?s=2048x2048&w=is&k=20&c=rfDwaIqkBjtFH4YCuvFaQB1ZSXdbhrR62kC4YeSqB7A="
   }
 ];
-export function Services() {
+export function Services({data}) {
+  const [dataa, setData] = useState([
+    {
+      title: "Wedding & Pre-Wedding",
+      year: "2024",
+      link:"/services/wedding",
+      technologies: ["Candid", "Traditional", "Cinematic"],
+      description: "Capturing your special moments with a perfect blend of traditional elegance and modern storytelling. Our wedding photography services ensure every precious moment is preserved forever.",
+      image: data.im1
+    },
+    {
+      title: "Portfolio Shoot",
+      year: "2024",
+      link:"/services/portfolioshoot",
+      technologies: ["Fashion", "Model", "Artistic"],
+      description: "Professional portfolio photography services designed to showcase your unique personality and talent. Perfect for models, actors, and professionals seeking to make a lasting impression.",
+      image: data.im2
+    },
+    {
+      title: "Street Photography",
+      year: "2024",
+      link:"/services/streetphotography",
+      technologies: ["Documentary", "Urban", "Lifestyle"],
+      description: "Capturing the raw essence of urban life through candid street photography. Our approach focuses on authentic moments and the genuine spirit of city living.",
+      image: data.im3
+    },
+    {
+      title: "Exhibitions",
+      year: "2024",
+      link:"/services/exhibitions",
+      technologies: ["Gallery", "Art", "Events"],
+      description: "Specialized photography services for art exhibitions, galleries, and cultural events. We ensure your artwork and exhibitions are documented with precision and artistic sensitivity.",
+      image: data.im4
+    },
+    {
+      title: "Baby Shoot",
+      year: "2024",
+      link:"/services/babyshoot",
+      technologies: ["Newborn", "Infant", "Milestone"],
+      description: "Gentle and professional baby photography capturing those precious early moments. Our specialized approach ensures comfortable and safe sessions for your little ones.",
+      image: data.im5
+    },
+    {
+      title: "Maternity Shoot",
+      year: "2024",
+      link:"/services/maternityshoot",
+      technologies: ["Pregnancy", "Family", "Studio"],
+      description: "Celebrating the beauty of motherhood through elegant maternity photography. We create timeless images that capture this special journey in your life.",
+      image: data.im6
+    },
+    {
+      title: "Commercial Shoot",
+      year: "2024",
+      link:"/services/commercialshoot",
+      technologies: ["Product", "Brand", "Marketing"],
+      description: "Professional commercial photography that elevates your brand. From product photography to marketing materials, we help businesses showcase their best features.",
+      image: data.im7
+    },
+    {
+      title: "Corporate Shoot",
+      year: "2024",
+      link:"/services/corporateshoot",
+      technologies: ["Business", "Professional", "Team"],
+      description: "Corporate photography services tailored for the modern business environment. Including headshots, team photos, and event coverage for professional settings.",
+      image: data.im8
+    },
+    {
+      title: "Property Shoot",
+      year: "2024",
+      link:"/services/propertyshoot",
+      technologies: ["Real Estate", "Interior", "Architectural"],
+      description: "Expert property photography showcasing real estate at its finest. We capture spaces in their best light, helping properties stand out in the market.",
+      image: data.im9
+    },
+    {
+      title: "Anniversary Shoot",
+      year: "2024",
+      link:"/services/anniversaryshoot",
+      technologies: ["Couple", "Celebration", "Portrait"],
+      description: "Romantic anniversary photography celebrating your journey together. We create beautiful memories that capture the love and joy of your special milestone.",
+      image: data.im10
+    },
+    {
+      title: "Birthday",
+      year: "2024",
+      link:"/services/birthday",
+      technologies: ["Party", "Event", "Celebration"],
+      description: "Vibrant birthday photography services capturing all the fun and excitement. From kids' parties to milestone celebrations, we document every special moment.",
+      image: data.im11
+    },
+    {
+      title: "Rice Ceremony",
+      year: "2024",
+      link: "/services/riceceremony",
+      technologies: ["Traditional", "Cultural", "Ritual"],
+      description: "Specialized photography for traditional rice ceremony celebrations. We capture this important cultural milestone with respect and attention to detail.",
+      image: data.im12
+    }
+  ])
+
+  // const getD=async()=>{
+  //   const response = await fetch("/api/land")
+  //   const dataa = await response.json()
+  //   console.log("SERVICES DATA",dataa.data);
+  //   var dup=data;
+  //   for (let i = 0; i < 12; i++) {
+  //     const key = `im${i+1}`;
+  //     dup[i].image=dataa.data[0][key];
+  //   }
+  //   setData(dup)
+  // }
+  // useEffect(() => {
+  //   getD()
+  // }, [])
   return (
     <section className="bg-white min-h-screen py-32">
       <div className="container mx-auto px-4">
@@ -97,8 +223,9 @@ export function Services() {
         </div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
+          {dataa.map((service, index) => (
             <motion.div
+            id={service.title.toLowerCase().replace(/\s+/g, "")}
               key={service.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -174,6 +301,9 @@ export function Services() {
                  className="inline-block w-fit border-2 border-black text-black px-6 py-2 text-lg uppercase tracking-wider rounded-lg hover:bg-black hover:text-white transition-colors duration-300"
                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={()=>{
+                    window.location.href="./"+service.link;
+                  }}
                 >
                   Learn More
                 </motion.button>

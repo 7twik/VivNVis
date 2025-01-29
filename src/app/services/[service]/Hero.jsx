@@ -1,20 +1,10 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { NavBar } from "./Navbar"
-
-export default function Hero({vide}) {
-  const [vid,setVid]=useState(vide);
-  const getd=async()=>{
-    const response = await fetch("/api/land")
-    const data = await response.json()
-    console.log("LANDING DATA",data.data[0]);
-    setVid(data.data[0].vid1);
-  }
-  useEffect(() => {
-    getd()
-  }, [])
+import { Data } from "./data"
+export default function Hero({service}) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -40,7 +30,7 @@ export default function Hero({vide}) {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src={vid} type="video/mp4" />
+        <source src="/v2.mp4" type="video/mp4" />
       </motion.video>
 
       {/* Overlay */}
@@ -55,9 +45,7 @@ export default function Hero({vide}) {
         className="relative z-10 h-full flex flex-col justify-center px-4 md:px-20 lg:px-32 max-w-3xl"
       >
         <h2 className="dancfont text-3xl font-thin md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-          HIGH-QUALITY, PROFESSIONAL
-          <br />
-          PHOTOGRAPHY & FILM SERVICES
+          {Data[service].heading}
         </h2>
         <p className="text-lg font-thin md:text-xl text-white mb-8">We get the perfect shot, every time!</p>
         <motion.a

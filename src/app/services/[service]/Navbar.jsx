@@ -13,7 +13,7 @@ const navItems = [
 ]
 
 const sectionItems = [
-  "Wedding & Pre-Wedding",
+  "Wedding",
   "Portfolio Shoot",
   "Street Photography",
   "Exhibitions",
@@ -34,7 +34,7 @@ function Dropdown({ items }) {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center text-white hover:text-amber-400 transition-colors duration-300"
+        className=" flex items-center text-white hover:text-amber-400 transition-colors duration-300"
       >
         More <ChevronDown className="ml-1" size={16} />
       </button>
@@ -49,7 +49,7 @@ function Dropdown({ items }) {
             {items.map((item) => (
               <Link
                 key={item}
-                href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
+                href={`/services/${item.toLowerCase().replace(/\s+/g, "")}`}
                 className="block px-4 py-2 text-sm text-white hover:bg-amber-400 hover:text-black transition-colors duration-300"
                 onClick={() => setIsOpen(false)}
               >
