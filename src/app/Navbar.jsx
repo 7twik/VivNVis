@@ -8,7 +8,6 @@ import { Camera, Home, Users, Mail, ChevronDown, Menu, X } from "lucide-react"
 
 const navItems = [
   { name: "Home", icon: Home, href: "/" },
-  { name: "Portfolio", icon: Camera, href: "/portfolio" },
   { name: "Contact", icon: Mail, href: "/contact" },
 ]
 

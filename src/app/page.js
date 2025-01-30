@@ -15,9 +15,7 @@ export default function Home() {
     const dataa = await response.json()
     console.log("LANDING",dataa.data[0]);
     await setData(dataa.data[0])
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000);
+    setLoading(false)
   }
   useEffect(() => {
     getd()

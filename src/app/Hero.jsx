@@ -61,7 +61,7 @@ export default function Hero({vide}) {
         </h2>
         <p className="text-lg font-thin md:text-xl text-white mb-8">We get the perfect shot, every time!</p>
         <motion.a
-  href="/portfolio"
+  href="#wedding"
   className="inline-block w-fit border-2 border-white text-white px-6 py-2 text-lg uppercase tracking-wider rounded-lg hover:bg-white hover:text-black transition-colors duration-300"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
