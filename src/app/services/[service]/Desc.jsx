@@ -99,7 +99,7 @@ const [imgarr, setImgarr] = useState(datd.length===0?images:datd)
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative h-[80vh] w-[80vh]"
+            className="relative md:h-[80vh] md:w-[80vh] w-[90vw] h-[90vw]"
           >
              <button
             onClick={() => scroll("left")}
@@ -111,7 +111,7 @@ const [imgarr, setImgarr] = useState(datd.length===0?images:datd)
               src={imgarr[currentImage].url || "/placeholder.svg"}
               alt="alttt"
               fill
-              className="rounded-lg object-cover md:px-0 px-2"
+              className="rounded-lg object-cover md:px-0"
             />
              <button
             onClick={() => scroll("right")}
