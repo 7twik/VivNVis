@@ -111,7 +111,7 @@ const [imgarr, setImgarr] = useState(datd.length===0?images:datd)
               src={imgarr[currentImage].url || "/placeholder.svg"}
               alt="alttt"
               fill
-              className="rounded-lg object-cover"
+              className="rounded-lg object-cover md:px-0 px-2"
             />
              <button
             onClick={() => scroll("right")}

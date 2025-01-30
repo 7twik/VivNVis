@@ -33,17 +33,17 @@ export function Footer() {
           <div className="space-y-4 lg:pl-4">
             <h3 className="text-lg font-semibold">Contact</h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-3 text-neutral-400">
+              <li className="flex items-center gap-3 text-white">
                 <Phone size={16} className="flex-shrink-0" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">+91 8789524372 / +91 8617290073</span>
               </li>
-              <li className="flex items-center gap-3 text-neutral-400">
+              <li className="flex items-center gap-3 text-white">
                 <Mail size={16} className="flex-shrink-0" />
                 <span className="text-sm break-all">vividandvisionphoto@gmail.com</span>
               </li>
-              <li className="flex items-center gap-3 text-neutral-400">
+              <li className="flex items-center gap-3 text-white">
                 <MapPin size={16} className="flex-shrink-0" />
-                <span className="text-sm">123 Photography Lane, NY 10001</span>
+                <span className="text-sm">8H </span>
               </li>
             </ul>
           </div>

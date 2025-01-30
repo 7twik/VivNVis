@@ -3,6 +3,8 @@ import Hero from './Hero'
 import React, { useEffect, useState } from 'react'
 import { NavBar } from './Navbar'
 import { Desc } from './Desc'
+import Loading from '@/app/Loading'
+import { Footer } from '@/app/Footer'
 const Home = ({params}) => {
     const { service } = params
     const [data,setData]=useState([])
@@ -22,11 +24,12 @@ const Home = ({params}) => {
 
   return (
     <div>
-      {loading && <div>Loading...</div>}
+      {loading && <Loading />}
       {!loading&&<>
         <NavBar/>
         <Hero service={service} />
         <Desc datd={data} service={service} />
+        <Footer />
         </>}
     </div>
   )
