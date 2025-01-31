@@ -60,7 +60,7 @@ const images = [
 export function Desc({ datd,service }) {
   const [currentImage, setCurrentImage] = useState(0)
   const carouselRef = useRef(null)
-const [imgarr, setImgarr] = useState(datd.length===0?images:datd)
+const imgarr = (datd.length===0)?images:datd;
   const scroll = (direction) => {
     if (direction==="right") {
       if (currentImage === imgarr.length - 1) {
@@ -99,7 +99,7 @@ const [imgarr, setImgarr] = useState(datd.length===0?images:datd)
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative md:h-[80vh] md:w-[80vh] w-[90vw] h-[90vw]"
+            className="relative md:h-[80vh] md:w-[80vh] mx-20"
           >
              <button
             onClick={() => scroll("left")}

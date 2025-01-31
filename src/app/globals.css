@@ -27,7 +27,7 @@ html{
 
 body {
   color: var(--foreground);
-  background: #221410;
+  background: #000000;
   font-family: "Bona Nova SC";
 }
 @keyframes scroll {
