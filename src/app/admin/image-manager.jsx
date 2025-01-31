@@ -106,6 +106,7 @@ export function ImageManager() {
 
   return (
     <div className="grid gap-8">
+      <h1 className="text-2xl font-semibold">Image Manager</h1>
       <Card>
         <CardContent className="pt-6">
           <h2 className="text-xl font-semibold mb-4">Add New Image</h2>
@@ -138,7 +139,8 @@ export function ImageManager() {
                 </SelectContent>
               </Select>
             </div>
-            <Button type="submit">Add Image</Button>
+            <Button type="submit" 
+            className="bg-white border-2 border-gray-400 text-black hover:bg-black hover:text-white">Add Image</Button>
           </form>
         </CardContent>
       </Card>

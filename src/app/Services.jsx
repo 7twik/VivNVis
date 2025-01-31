@@ -106,6 +106,7 @@ export function Services({data}) {
   const [dataa, setData] = useState([
     {
       title: "Wedding & Pre-Wedding",
+      title2: "Wedding",
       year: "2024",
       link:"/services/wedding",
       technologies: ["Candid", "Traditional", "Cinematic"],
@@ -114,6 +115,7 @@ export function Services({data}) {
     },
     {
       title: "Portfolio Shoot",
+      title2: "Portfolio Shoot",
       year: "2024",
       link:"/services/portfolioshoot",
       technologies: ["Fashion", "Model", "Artistic"],
@@ -122,6 +124,7 @@ export function Services({data}) {
     },
     {
       title: "Street Photography",
+      title2: "Street Photography",
       year: "2024",
       link:"/services/streetphotography",
       technologies: ["Documentary", "Urban", "Lifestyle"],
@@ -130,6 +133,7 @@ export function Services({data}) {
     },
     {
       title: "Exhibitions",
+      title2: "Exhibitions",
       year: "2024",
       link:"/services/exhibitions",
       technologies: ["Gallery", "Art", "Events"],
@@ -138,6 +142,7 @@ export function Services({data}) {
     },
     {
       title: "Baby Shoot",
+      title2: "Baby Shoot",
       year: "2024",
       link:"/services/babyshoot",
       technologies: ["Newborn", "Infant", "Milestone"],
@@ -146,6 +151,7 @@ export function Services({data}) {
     },
     {
       title: "Maternity Shoot",
+      title2: "Maternity Shoot",
       year: "2024",
       link:"/services/maternityshoot",
       technologies: ["Pregnancy", "Family", "Studio"],
@@ -154,6 +160,7 @@ export function Services({data}) {
     },
     {
       title: "Commercial Shoot",
+      title2: "Commercial Shoot",
       year: "2024",
       link:"/services/commercialshoot",
       technologies: ["Product", "Brand", "Marketing"],
@@ -162,6 +169,7 @@ export function Services({data}) {
     },
     {
       title: "Corporate Shoot",
+      title2: "Corporate Shoot",
       year: "2024",
       link:"/services/corporateshoot",
       technologies: ["Business", "Professional", "Team"],
@@ -170,6 +178,7 @@ export function Services({data}) {
     },
     {
       title: "Property Shoot",
+      title2: "Property Shoot",
       year: "2024",
       link:"/services/propertyshoot",
       technologies: ["Real Estate", "Interior", "Architectural"],
@@ -178,6 +187,7 @@ export function Services({data}) {
     },
     {
       title: "Anniversary Shoot",
+      title2: "Anniversary Shoot",
       year: "2024",
       link:"/services/anniversaryshoot",
       technologies: ["Couple", "Celebration", "Portrait"],
@@ -186,6 +196,7 @@ export function Services({data}) {
     },
     {
       title: "Birthday",
+      title2: "Birthday",
       year: "2024",
       link:"/services/birthday",
       technologies: ["Party", "Event", "Celebration"],
@@ -194,6 +205,7 @@ export function Services({data}) {
     },
     {
       title: "Rice Ceremony",
+      title2: "Rice Ceremony",
       year: "2024",
       link: "/services/riceceremony",
       technologies: ["Traditional", "Cultural", "Ritual"],
@@ -202,20 +214,6 @@ export function Services({data}) {
     }
   ])
 
-  // const getD=async()=>{
-  //   const response = await fetch("/api/land")
-  //   const dataa = await response.json()
-  //   console.log("SERVICES DATA",dataa.data);
-  //   var dup=data;
-  //   for (let i = 0; i < 12; i++) {
-  //     const key = `im${i+1}`;
-  //     dup[i].image=dataa.data[0][key];
-  //   }
-  //   setData(dup)
-  // }
-  // useEffect(() => {
-  //   getD()
-  // }, [])
   return (
     <section className="bg-white min-h-screen py-32">
       <div className="container mx-auto px-4">
@@ -225,7 +223,7 @@ export function Services({data}) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {dataa.map((service, index) => (
             <motion.div
-            id={service.title.toLowerCase().replace(/\s+/g, "")}
+            id={service.title2.toLowerCase().replace(/\s+/g, "")}
               key={service.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}

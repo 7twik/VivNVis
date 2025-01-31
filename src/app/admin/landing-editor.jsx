@@ -93,6 +93,7 @@ export function LandingEditor() {
 
   return (
     <Card>
+      <h1 className="text-2xl font-semibold">Landing Page Editor</h1>
       <CardContent className="pt-6">
         <div className="grid gap-6">
           <div className="grid gap-4">
@@ -131,7 +132,7 @@ export function LandingEditor() {
             </div>
           </div>
 
-          <Button onClick={handleSubmit} className="w-full">
+          <Button onClick={handleSubmit}  className="bg-white border-2 border-gray-400 text-black hover:bg-black hover:text-white">
             Save Changes
           </Button>
         </div>

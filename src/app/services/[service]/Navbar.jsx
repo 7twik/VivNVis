@@ -132,7 +132,7 @@ export function NavBar() {
                 {sectionItems.map((item) => (
                   <Link
                     key={item}
-                    href={`/services/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    href={`/services/${item.toLowerCase().replace(/\s+/g, "")}`}
                     className="block py-2 text-white hover:text-amber-400 transition-colors duration-300"
                     onClick={() => setIsOpen(false)}
                   >

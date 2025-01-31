@@ -97,6 +97,7 @@ export function TestimonialManager() {
 
   return (
     <div className="grid gap-8">
+      <h1 className="text-2xl font-semibold">Testimonial Manager</h1>
       <Card>
         <CardContent className="pt-6">
           <h2 className="text-xl font-semibold mb-4">Add New Testimonial</h2>
@@ -145,7 +146,7 @@ export function TestimonialManager() {
                 required
               />
             </div>
-            <Button type="submit">Add Testimonial</Button>
+            <Button type="submit"  className="bg-white border-2 border-gray-400 text-black hover:bg-black hover:text-white">Add Testimonial</Button>
           </form>
         </CardContent>
       </Card>
