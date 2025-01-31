@@ -9,6 +9,7 @@ import { Camera, Home, Users, Mail, ChevronDown, Menu, X } from "lucide-react"
 const navItems = [
   { name: "Home", icon: Home, href: "/" },
   { name: "Contact", icon: Mail, href: "/contact" },
+  { name: "About", icon: Users, href: "/about" },
 ]
 
 const sectionItems = [
