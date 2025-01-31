@@ -288,7 +288,7 @@ export function Services({data}) {
                   <div className="flex flex-wrap items-center gap-4">
                     
                     <div className="px-6 py-1 rounded-full border border-neutral-700 bg-neutral-900/50">
-                      <p className="text-neutral-400 text-sm">{service.technologies.join(" • ")}</p>
+                      <p className="text-neutral-100 text-sm">{service.technologies.join(" • ")}</p>
                     </div>
                   </div>
                 </div>
