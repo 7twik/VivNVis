@@ -100,7 +100,7 @@ export function Desc({ datd,service }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative md:h-[80vh] md:w-[80vh] h-[80vw] w-[80vw] rounded-lg overflow-hidden shadow-lg"
+            className="relative md:h-[80vh] md:w-[80vh] h-[90vw] w-[90vw] rounded-lg overflow-hidden shadow-lg"
           >
              <button
             onClick={() => scroll("left")}
