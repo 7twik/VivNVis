@@ -100,7 +100,7 @@ export function Desc({ datd,service }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative md:h-[80vh] md:w-[80vh] h-[90vw] w-[90vw] rounded-lg overflow-hidden shadow-lg"
+            className="relative md:h-[80vh] md:w-[80vh] h-[80vw] w-[80vw] mr-[10vw] md:mr-0 rounded-lg overflow-hidden shadow-lg"
           >
              <button
             onClick={() => scroll("left")}
@@ -129,7 +129,7 @@ export function Desc({ datd,service }) {
 
           <div
             ref={carouselRef}
-            className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
+            className="flex gap-4 flex-wrap p-2 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {imgarr.map((image, index) => (
@@ -137,8 +137,8 @@ export function Desc({ datd,service }) {
                 key={index}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`flex-none w-32 h-32 relative rounded-lg overflow-hidden cursor-pointer ${
-                  currentImage === index ? "ring-2 ring-offset-2 ring-black" : ""
+                className={`flex-none w-16 h-16 relative rounded-lg overflow-hidden cursor-pointer ${
+                  currentImage === index ? "ring-2 ring-offset-2 ring-black" : "ring-1 ring-offset-1 ring-gray-200"
                 }`}
                 onClick={() => setCurrentImage(index)}
               >
