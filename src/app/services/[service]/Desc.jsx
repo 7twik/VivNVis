@@ -60,7 +60,8 @@ const images = [
 export function Desc({ datd,service }) {
   const [currentImage, setCurrentImage] = useState(0)
   const carouselRef = useRef(null)
-const imgarr = (datd.length===0)?images:datd;
+// const imgarr = (datd.length===0)?images:datd;
+  const imgarr=images;
   const scroll = (direction) => {
     if (direction==="right") {
       if (currentImage === imgarr.length - 1) {
