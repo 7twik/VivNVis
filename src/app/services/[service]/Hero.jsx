@@ -20,7 +20,7 @@ export default function Hero({service}) {
   }, [])
 
   return (
-    <div ref={ref} className="relative h-screen w-full overflow-hidden">
+    <div ref={ref} className="relative h-screen w-[100vw] overflow-hidden">
       {/* Video Background */}
       <motion.video
         style={{ scale }}
