@@ -97,13 +97,13 @@ export function TestimonialManager() {
 
   return (
     <div className="grid gap-8">
-      <h1 className="text-2xl font-semibold">Testimonial Manager</h1>
+      <h1 className="text-2xl  text-white font-semibold">Testimonial Manager</h1>
       <Card>
         <CardContent className="pt-6">
-          <h2 className="text-xl font-semibold mb-4">Add New Testimonial</h2>
+          <h2 className="text-xl text-white  font-semibold mb-4">Add New Testimonial</h2>
           <form onSubmit={handleSubmit} className="grid gap-4">
             <div className="grid gap-2">
-              <label htmlFor="url" className="text-sm font-medium">
+              <label htmlFor="url" className="text-sm  text-white font-medium">
                 Image URL
               </label>
               <Input
@@ -114,7 +114,7 @@ export function TestimonialManager() {
               />
             </div>
             <div className="grid gap-2">
-              <label htmlFor="name" className="text-sm font-medium">
+              <label htmlFor="name" className="text-sm  text-white font-medium">
                 Name
               </label>
               <Input
@@ -125,7 +125,7 @@ export function TestimonialManager() {
               />
             </div>
             <div className="grid gap-2">
-              <label htmlFor="designation" className="text-sm font-medium">
+              <label htmlFor="designation" className="text-sm text-white  font-medium">
                 Designation
               </label>
               <Input
@@ -136,7 +136,7 @@ export function TestimonialManager() {
               />
             </div>
             <div className="grid gap-2">
-              <label htmlFor="message" className="text-sm font-medium">
+              <label htmlFor="message" className="text-sm  text-white font-medium">
                 Message
               </label>
               <Textarea
@@ -165,9 +165,9 @@ export function TestimonialManager() {
                   width={64}
                   height={64}
 />
-                <h3 className="font-semibold">{testimonial.Name}</h3>
+                <h3 className="font-semibold text-white ">{testimonial.Name}</h3>
                 <p className="text-sm text-gray-500">{testimonial.Designation}</p>
-                <p className="text-sm">{testimonial.Message}</p>
+                <p className="text-sm text-white ">{testimonial.Message}</p>
               </div>
               <Button variant="destructive" size="icon" onClick={() => handleDelete(testimonial.Name)}>
                 <Trash2 className="h-4 w-4" />

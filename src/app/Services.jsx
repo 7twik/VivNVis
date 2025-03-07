@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const services = [
   {
-    title: "Wedding & Pre-Wedding",
+    title: "Wedding",
     year: "2024",
     link:"/services/wedding",
     technologies: ["Candid", "Traditional", "Cinematic"],
@@ -70,11 +70,11 @@ const services = [
     image: "https://cdn.pixabay.com/photo/2022/10/17/15/02/photography-7527978_640.jpg"
   },
   {
-    title: "Property Shoot",
+    title: "Pre-wedding Shoot",
     year: "2024",
-    link:"/services/propertyshoot",
-    technologies: ["Real Estate", "Interior", "Architectural"],
-    description: "Expert property photography showcasing real estate at its finest. We capture spaces in their best light, helping properties stand out in the market.",
+    link:"/services/prewedding",
+    technologies: ["Photography", "Storytelling", "Cinematography"],
+    description: "Expert pre-wedding photography capturing love stories at their finest. We frame moments in their most romantic light, helping couples treasure their memories forever.",
     image: "https://cdn.pixabay.com/photo/2014/12/27/15/31/camera-581126_640.jpg"
   },
   {
@@ -105,7 +105,7 @@ const services = [
 export function Services({data}) {
   const [dataa, setData] = useState([
     {
-      title: "Wedding & Pre-Wedding",
+      title: "Wedding",
       title2: "Wedding",
       year: "2024",
       link:"/services/wedding",
@@ -177,12 +177,12 @@ export function Services({data}) {
       image: data.im8
     },
     {
-      title: "Property Shoot",
-      title2: "Property Shoot",
+      title: "Pre-wedding Shoot",
+      title2: "Pre-wedding Shoot",
       year: "2024",
-      link:"/services/propertyshoot",
-      technologies: ["Real Estate", "Interior", "Architectural"],
-      description: "Expert property photography showcasing real estate at its finest. We capture spaces in their best light, helping properties stand out in the market.",
+      link:"/services/prewedding",
+      technologies: ["Photography", "Storytelling", "Cinematography"],
+      description: "Expert pre-wedding photography capturing love stories at their finest. We frame moments in their most romantic light, helping couples treasure their memories forever.",
       image: data.im9
     },
     {

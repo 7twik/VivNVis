@@ -26,7 +26,7 @@ export default function ContactPage() {
           </p>
 
           <motion.a
-            href="https://wa.me/your-whatsapp-number"
+            href="https://wa.me/8617290073"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full hover:bg-[#128C7E] transition-colors duration-300"

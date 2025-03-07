@@ -100,11 +100,11 @@ export function Desc({ datd,service }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative md:h-[80vh] md:w-[80vh] h-[80vw] w-[80vw] mr-[10vw] md:mr-0 rounded-lg overflow-hidden shadow-lg"
+            className="relative md:h-[46vw] md:w-[80vw] h-[80vw] w-[80vw] mr-[10vw] md:mr-0 rounded-lg overflow-hidden shadow-lg"
           >
              <button
             onClick={() => scroll("left")}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-transparent backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-gray-400 transition-colors"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-gray-400 transition-colors"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
@@ -116,7 +116,7 @@ export function Desc({ datd,service }) {
             />
              <button
             onClick={() => scroll("right")}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-transparent hover:bg-gray-300 backdrop-blur-sm p-2 rounded-full shadow-lg  transition-colors"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black hover:bg-gray-300 backdrop-blur-sm p-2 rounded-full shadow-lg  transition-colors"
           >
             <ChevronRight className="w-6 h-6" />
           </button>

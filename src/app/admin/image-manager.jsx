@@ -10,7 +10,7 @@ import { Trash2 } from "lucide-react"
 import Image from "next/image"
 
 
-const pages = ["wedding", "portfolioShoot", "streetPhotography","exhibitions","babyShoot","maternityShoot","commercialShoot","corporateShoot","propertyShoot","anniversaryShoot","birthday","riceCeremony"]
+const pages = ["wedding", "portfolioShoot", "streetPhotography","exhibitions","babyShoot","maternityShoot","commercialShoot","corporateShoot","prewedding","anniversaryShoot","birthday","riceCeremony"]
 
 export function ImageManager() {
   const [images, setImages] = useState([])
@@ -106,13 +106,13 @@ export function ImageManager() {
 
   return (
     <div className="grid gap-8">
-      <h1 className="text-2xl font-semibold">Image Manager</h1>
+      <h1 className="text-2xl text-white font-semibold">Image Manager</h1>
       <Card>
         <CardContent className="pt-6">
           <h2 className="text-xl font-semibold mb-4">Add New Image</h2>
           <form onSubmit={handleSubmit} className="grid gap-4">
             <div className="grid gap-2">
-              <label htmlFor="url" className="text-sm font-medium">
+              <label htmlFor="url" className="text-sm text-white  font-medium">
                 Image URL
               </label>
               <Input
@@ -123,7 +123,7 @@ export function ImageManager() {
               />
             </div>
             <div className="grid gap-2">
-              <label htmlFor="page" className="text-sm font-medium">
+              <label htmlFor="page" className="text-sm  text-white font-medium">
                 Page
               </label>
               <Select value={newImage.page} onValueChange={(value) => setNewImage({ ...newImage, page: value })}>

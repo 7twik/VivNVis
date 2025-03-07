@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react"
+import { Instagram, Facebook, Twitter, Whatsapp , Contact, Youtube, Mail, Phone, MapPin } from "lucide-react"
 import Image from "next/image"
 
 export function Footer() {
@@ -43,7 +43,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-white">
                 <MapPin size={16} className="flex-shrink-0" />
-                <span className="text-sm">8H </span>
+                <span className="text-sm">8H, Roy para bye lane 
+                Kol 700050 </span>
               </li>
             </ul>
           </div>
@@ -52,14 +53,14 @@ export function Footer() {
           <div className="space-y-4 lg:pl-4">
             <h3 className="text-lg font-semibold">Follow Us</h3>
             <div className="flex gap-6">
-              <Link href="https://instagram.com" className="text-neutral-400 hover:text-white transition-colors p-2">
-                <Instagram size={24} />
+              <Link href="https://wa.me/8617290073" className="text-neutral-400 hover:text-white transition-colors p-2">
+                <Contact size={24} />
               </Link>
-              <Link href="https://facebook.com" className="text-neutral-400 hover:text-white transition-colors p-2">
+              <Link href="https://www.facebook.com/people/Vivid-Vision-Photography/100077598306507/" className="text-neutral-400 hover:text-white transition-colors p-2">
                 <Facebook size={24} />
               </Link>
-              <Link href="https://twitter.com" className="text-neutral-400 hover:text-white transition-colors p-2">
-                <Twitter size={24} />
+              <Link href="https://www.facebook.com/people/Vivid-Vision-Photography/100077598306507/" className="text-neutral-400 hover:text-white transition-colors p-2">
+                <Youtube size={24} />
               </Link>
             </div>
           </div>

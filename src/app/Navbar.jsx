@@ -10,6 +10,7 @@ const navItems = [
   { name: "Home", icon: Home, href: "/" },
   { name: "Contact", icon: Mail, href: "/contact" },
   { name: "About", icon: Users, href: "/about" },
+  { name: "Our Youtube Channel", icon: Camera, href: "https://youtu.be/HJZxZMQi6kA?si=1Qgh8r-adW8Uybte" },
 ]
 
 const sectionItems = [

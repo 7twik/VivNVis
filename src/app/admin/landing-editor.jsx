@@ -100,7 +100,7 @@ export function LandingEditor() {
             <h2 className="text-xl font-semibold">Videos</h2>
             {["vid1", "vid2", "vid3"].map((key) => (
               <div key={key} className="grid gap-2">
-                <label htmlFor={key} className="text-sm font-medium">
+                <label htmlFor={key} className="text-sm  text-white font-medium">
                   {key.toUpperCase()}
                 </label>
                 <video src={data[key] == "DUMMY"? "./v1.mp4":data[key]} controls></video>
@@ -114,11 +114,11 @@ export function LandingEditor() {
           </div>
 
           <div className="grid gap-4">
-            <h2 className="text-xl font-semibold">Images</h2>
+            <h2 className="text-xl  text-white font-semibold">Images</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {Array.from({ length: 12 }, (_, i) => `im${i + 1}`).map((key) => (
                 <div key={key} className="grid gap-2">
-                  <label htmlFor={key} className="text-sm font-medium">
+                  <label htmlFor={key} className="text-sm  text-white font-medium">
                     {key.toUpperCase()}
                   </label>
                   <Image src={data[key]} alt={key} width={300} height={200} />
