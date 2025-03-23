@@ -114,7 +114,7 @@ export function Services({data}) {
       image: data.im1
     },
     {
-      title: "Portfolio Shoot",
+      title: "Vivid Albums",
       title2: "Portfolio Shoot",
       year: "2024",
       link:"/services/portfolioshoot",

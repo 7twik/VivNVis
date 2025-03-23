@@ -23,11 +23,7 @@ export default function Home() {
     console.log("LANDING", dataa.data[0]);
     await setData(dataa.data[0]);
 
-    setTimeout(() => {
-      setLoading(false);
-      play();  // ✅ Play the sound after loading
-      console.log("/muzs.mp3");
-    }, 1000);
+    setLoading(false);
   };
 
   useEffect(() => {
