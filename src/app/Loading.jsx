@@ -8,7 +8,7 @@ const Loading = () => {
       <CutoutTextLoader
         height="100vh"
         background="white"
-        imgUrl={random1or2 === 1 ? Load1 : Load2} // ✅ Correct way to reference public images
+        imgUrl={random1or2 == 1 ? Load1 : Load2} // ✅ Correct way to reference public images
       />
     </div>
   );

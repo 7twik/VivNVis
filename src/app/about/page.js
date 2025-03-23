@@ -43,9 +43,9 @@ export default function AboutPage() {
     {
       name: "Sujoy Chatterjee",
       role: "Master Photographer",
-      image: "https://drive.google.com/file/d/1YEInq2Ep9FXz1KIvi-9Bcq94V4Cwv5xf/view?usp=sharing",
+      image: "/load2.jpg",
     },
-    { name: "Bidisha Dey", role: "Master Photographer", image: "https://drive.google.com/file/d/1sAdghiVc3ZBvAh-wIy2zWEYPmuxHd9SV/view?usp=sharing" }
+    { name: "Bidisha Dey", role: "Master Photographer", image: "/load1.jpg" }
   ]
 
   return (
