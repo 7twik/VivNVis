@@ -42,3 +42,11 @@ body {
 .animate-scroll {
   animation: scroll var(--tw-scroll-duration, 40s) linear infinite;
 }
+@keyframes pulse {
+  50% {
+      opacity: .5;
+  }
+}
+.animate-pulse {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+}

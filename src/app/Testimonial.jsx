@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 
 const testimonials = [
@@ -85,22 +85,23 @@ function TestimonialRow({ items, reverse = false }) {
         } 
       }
     >
-      {[...items, ...items].map((item, index) => (
+      {items.length==0?<></>:items.map((item, index) => ( 
+     
         <div key={index} className="flex-none w-[400px] bg-[#0A0F1C] rounded-lg overflow-hidden">
           <div className="flex items-start gap-4 p-6">
             <div className="flex-none w-20 h-20 rounded-lg overflow-hidden">
               <Image
-                src={item.image || "/placeholder.svg"}
-                alt={item.name}
+                src={item.Url || "/placeholder.svg"}
+                alt={item.Name}
                 width={80}
                 height={80}
                 className="w-full h-full object-cover rounded-md"
               />
             </div>
             <div className="flex-1 min-w-0">
-              <h3 className="text-xl font-semibold text-white mb-1">{item.name}</h3>
-              <p className="text-gray-400 text-sm mb-3">{item.role}</p>
-              <p className="text-gray-300 text-sm leading-relaxed">{item.quote}</p>
+              <h3 className="text-xl font-semibold text-white mb-1">{item.Name}</h3>
+              <p className="text-gray-400 text-sm mb-3">{item.Designation}</p>
+              <p className="text-gray-300 text-sm leading-relaxed">{item.Message}</p>
             </div>
           </div>
         </div>
@@ -110,6 +111,20 @@ function TestimonialRow({ items, reverse = false }) {
 }
 
 export function Testimonial() {
+  const [test, setTest] = useState([])
+  const getd=async()=>{
+    const response = await fetch("/api/test")
+    const dataa = await response.json()
+    console.log(dataa)
+    var temp=[
+      dataa.data,
+      dataa.data
+    ]
+    setTest(temp)
+  }
+  useEffect(() => {
+    getd()
+  }, [])
   return (
     <section className="bg-white py-32 overflow-hidden">
       <div className="container mx-auto px-4 mb-12 text-center">
@@ -120,7 +135,7 @@ export function Testimonial() {
         </p>
       </div>
       <div className="space-y-8">
-        {testimonials.map((row, index) => (
+        {test.map((row, index) => (
           <TestimonialRow key={index} items={row} reverse={index % 2 === 1} />
         ))}
       </div>

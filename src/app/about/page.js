@@ -41,13 +41,11 @@ export default function AboutPage() {
 
   const teamMembers = [
     {
-      name: "Alice Johnson",
-      role: "Visionary Founder & Master Photographer",
-      image: "https://www.shutterstock.com/image-photo/smiling-cheerful-young-adult-african-260nw-1850821510.jpg",
+      name: "Sujoy Chatterjee",
+      role: "Master Photographer",
+      image: "https://drive.google.com/file/d/1YEInq2Ep9FXz1KIvi-9Bcq94V4Cwv5xf/view?usp=sharing",
     },
-    { name: "Bob Smith", role: "Light Sculpting Specialist", image: "https://www.shutterstock.com/image-photo/happy-dreaming-businessman-standing-by-260nw-2161634855.jpg" },
-    { name: "Carol Williams", role: "Composition Virtuoso", image: "https://www.shutterstock.com/image-photo/happy-young-man-sitting-home-260nw-2248472067.jpg" },
-    { name: "David Brown", role: "Post-Production Maestro", image: "https://www.shutterstock.com/image-photo/happy-dreaming-businessman-standing-by-260nw-2161634855.jpg" },
+    { name: "Bidisha Dey", role: "Master Photographer", image: "https://drive.google.com/file/d/1sAdghiVc3ZBvAh-wIy2zWEYPmuxHd9SV/view?usp=sharing" }
   ]
 
   return (
@@ -89,7 +87,7 @@ export default function AboutPage() {
 
         <section>
           <h2 className="dancfont text-4xl font-bold mb-12 text-center text-black">Meet Our Visionary Artists</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {teamMembers.map((member, index) => (
               <TeamMember key={index} {...member} />
             ))}
