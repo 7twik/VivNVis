@@ -2,7 +2,9 @@ const Load1 = "/load1.jpg";
 const Load2 = "/load2.jpg";
 
 const Loading = () => {
-  const random1or2 = Math.random() < 0.5 ? 1 : 2;
+  var currentDate = new Date(); 
+  var timestamp = currentDate. getTime();
+  var random1or2 = timestamp%2===0 ? 1 : 2;
 
   return (
     <div>
