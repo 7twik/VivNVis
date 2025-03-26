@@ -2,7 +2,8 @@ const Load1 = "/load1.jpg";
 const Load2 = "/load2.jpg";
 
 const Loading = () => {
-  const random1or2 = Math.round((Math.random() * 10) % 2);
+  const random1or2 = Math.random() < 0.5 ? 1 : 2;
+
   return (
     <div>
       <CutoutTextLoader
