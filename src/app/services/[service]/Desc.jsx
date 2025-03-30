@@ -113,6 +113,7 @@ export function Desc({ datd,service }) {
               alt="alttt"
               fill
               className="rounded-lg object-cover md:px-0"
+              loading="lazy"
             />
              <button
             onClick={() => scroll("right")}
@@ -142,7 +143,7 @@ export function Desc({ datd,service }) {
                 }`}
                 onClick={() => setCurrentImage(index)}
               >
-                <Image src={image.url || "/placeholder.svg"} alt="altt" fill className="object-cover" />
+                <Image src={image.url || "/placeholder.svg"} alt="altt" fill loading="lazy" className="object-cover" />
               </motion.div>
             ))}
           </div>

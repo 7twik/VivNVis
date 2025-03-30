@@ -13,7 +13,8 @@ const Home = ({params}) => {
       const response = await fetch("/api/img")
       const dataa = await response.json()
       console.log("LANDING",dataa.data[0]);
-      const arr=await dataa.data.filter((item)=>item.page===service)
+      console.log(service)
+      const arr=await dataa.data.filter((item)=>(item.page.toLowerCase()===service.toLowerCase()))
       console.log(arr);
        setData(arr)
       setLoading(false)
