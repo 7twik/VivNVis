@@ -16,7 +16,7 @@ const Home = ({params}) => {
       console.log(service)
       const arr=await dataa.data.filter((item)=>(item.page.toLowerCase()===service.toLowerCase()))
       console.log(arr);
-       setData(arr)
+      setData(arr)
       setLoading(false)
     }
     useEffect(() => {

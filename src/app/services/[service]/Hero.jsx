@@ -30,7 +30,7 @@ export default function Hero({service}) {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/v2.mp4" type="video/mp4" />
+        <source src="/v3.mp4" type="video/mp4" />
       </motion.video>
 
       {/* Overlay */}
